@@ -54,7 +54,7 @@ def get_url(url):
 def do_rules(recipient_id, message_text):
     rules = {
         "Hello": "World",
-        "Foo": "Bar"
+        "Foo": "Bar",
         "1992": "we need a whole date looks like dd.mm.yy"
     }
 
