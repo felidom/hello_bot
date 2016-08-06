@@ -41,7 +41,7 @@ def post_webhook():
                         element = create_generic_template_element("Hello", image, message_text)
                         reply_with_generic_template(sender_id, [element])
 
-                        # do_rules(sender_id, message_text)
+                        do_rules(sender_id, message_text)
 
     return "ok", 200
 
@@ -55,6 +55,7 @@ def do_rules(recipient_id, message_text):
     rules = {
         "Hello": "World",
         "Foo": "Bar"
+        "1992": "we need a whole date looks like dd.mm.yy"
     }
 
     if message_text in rules:
